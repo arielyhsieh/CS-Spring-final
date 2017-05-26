@@ -1,14 +1,48 @@
-## Welcome to GitHub Pages
+## Welcome to Ariel's Project
 
 You can use the [editor on GitHub](https://github.com/arielyhsieh/CS-Spring-final/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Code
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Superclass Store
 
 ```markdown
+'public class Store 
+{
+    int customers;
+    boolean state;
+    
+    public Store()
+    {
+        this.customers = 2;
+        this.state = true;
+    }
+    public Store(int customers, boolean state)
+    {
+        customers = customers;
+        state = state;
+    }
+    public int getCustomers()
+    {
+        return customers;
+    }
+    public boolean isClosed()
+    {
+        return false;
+    }
+    public void restock()
+    {
+        System.out.println("restock the supplies");
+    }
+    public String toString()
+    {
+        String output = new String();
+        output = "There are " + customers + "customers in the store.";
+        return output;
+    }
+}'
 Syntax highlighted code block
 
 # Header 1
